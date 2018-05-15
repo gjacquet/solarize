@@ -132,6 +132,10 @@ func Invert(color string) (string, bool) {
 		return Base2, true
 	case Base01:
 		return Base1, true
+	case Base00:
+		return Base0, true
+	case Base0:
+		return Base00, true
 	case Base1:
 		return Base01, true
 	case Base2:
